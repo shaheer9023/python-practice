@@ -18,6 +18,16 @@ def main():
             border-radius: 10px;
             margin: 10px 0;
         }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f2f6;
+            padding: 10px;
+            text-align: center;
+            font-style: italic;
+        }
         </style>
     """, unsafe_allow_html=True)
     
@@ -65,6 +75,9 @@ def main():
     # Add some helpful information at the bottom
     st.markdown("---")
     st.markdown("ℹ️ Enter any city with country to get weather information")
+    
+    # Add footer with credit
+    st.markdown('<div class="footer">Made with ❤️ by Shaheer Ahmad</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
-    main()
+    main() 
